@@ -4,15 +4,15 @@ var util = require('util')
 var Transform = stream.Transform
 
 function Skip(options) {
-  // allow use without new
-  if (!(this instanceof Skip)) {
-    return new Skip(options);
-  }
+	// allow use without new
+	if (!(this instanceof Skip)) {
+		return new Skip(options);
+	}
 
-  this._toSkip = options.skip
+	this._toSkip = options.skip
 
-  // init Transform
-  Transform.call(this, options);
+	// init Transform
+	Transform.call(this, options);
 }
 util.inherits(Skip, Transform);
 
