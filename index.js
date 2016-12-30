@@ -26,3 +26,5 @@ Skip.prototype._transform = function (chunk, enc, cb) {
 	}
 	cb();
 };
+
+module.exports = Skip;
