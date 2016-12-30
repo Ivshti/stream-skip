@@ -21,7 +21,7 @@ Skip.prototype._transform = function (chunk, enc, cb) {
 	else if (this._toSkip > chunk.length) {
 		this._toSkip -= chunk.length;
 	} else {
-		this.push(chunk.slice(this._toSkip))
+		if (this._toSkip !== chunk.length) this.push(chunk.slice(this._toSkip))
 		this._toSkip = 0;
 	}
 	cb();

@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Ivshti/stream-skip/issues"
   },
-  "homepage": "https://github.com/Ivshti/stream-skip#readme"
+  "homepage": "https://github.com/Ivshti/stream-skip#readme",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
 }
