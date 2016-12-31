@@ -6,9 +6,10 @@ node.js transform stream to skip first N bytes
 
 ```
 var skipStream = require("skip-stream")
-var stream = new skipStream({ skip: bytes })
+var sstream = new skipStream({ skip: bytes })
+
+// example
+myStream.pipe(sstream).pipe(stdout)
+
 ```
 
-## TODO
-
-### Tests
