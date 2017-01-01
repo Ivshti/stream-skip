@@ -1,6 +1,6 @@
 {
   "name": "stream-skip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": " Transform stream for skipping first N bytes",
   "main": "index.js",
   "scripts": {
